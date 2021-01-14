@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by Agota10 (http://jsbin.com/xehupix/8/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Saját festmény</title>
+<style id="jsbin-css">
+#painting {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: tan;
+  box-shadow: 17px 17px 12px gray;
+}
+
+#first-row {
+  width: 100%;
+  height: 50%;
+}
+
+#orangered-column {
+  width: 25%;
+  height: 100%;
+  background-color: orangered;
+}
+
+.right {
+  float: right;
+}
+
+.black {
+  background-color: black;
+}
+
+#line-vertical-first {
+  width: 2%;
+  height: 100%;
+}
+
+#black-orange-column {
+  width: 25%;
+  height: 100%;
+}
+
+#first-black-square {
+  width: 100%;
+  height: 50%;
+}
+
+#first-black-column {
+  width: 2%;
+  height: 50%;
+}
+
+#orange-square {
+  background-color: hsl(29, 100%, 50%);
+  width: 100%;
+  height: 50%;
+}
+
+#first-litle-black-square {
+  width: 50%;
+  height: 50%;
+  margin: 50px 0px 50px 0px;
+}
+
+#litle-orange-square {
+  width: 94%;
+  height: 100%;
+  background-color: hsl(39, 100%, 50%);
+}
+
+#line-vertical {
+  width: 2%;
+  height: 100%;
+}
+
+#second-column {
+  width: 100%;
+  height: 50%;
+}
+
+#darked-column {
+  background-color: darkred;
+  width: 50%;
+  height: 94%;
+}
+
+#first-black-line {
+  width: 50%;
+  height: 6%;
+}
+
+#black-red-column {
+  background-color: hsl(0, 100%, 42%);
+  width: 23%;
+  height: 100%;
+}
+
+#second-litle-black-square {
+  width: 50%;
+  height: 50%;
+  margin: 50px 0px 50px 50px;
+}
+
+#litle-red-square {
+  width: 82.5%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: red;
+}
+
+#second-black-square {
+  width: 27%;
+  height: 100%;
+}
+
+#line {
+  width: 100%;
+  height: 6%;
+}
+
+#second-row {
+  width: 100%;
+  height: 50%;
+}
+
+#black-darkyellow-column {
+  width: 25%;
+  height: 100%;
+}
+
+#third-black-square {
+  width: 100%;
+  height: 52.5%;
+}
+
+#second-black-column {
+  width: 108%;
+  height: 4%;
+}
+
+#darkyellow-square {
+  width: 108%;
+  height: 40%;
+  background-color: goldenrod;
+}
+
+#first-line-row {
+  width: 2%;
+  height: 52.5%;
+}
+
+#yellow-darkyellow-column {
+  width: 25%;
+  height: 100%;
+}
+
+#yellow-square {
+  width: 100%;
+  height: 52.5%;
+  background-color: hsl(58, 64%, 49%);
+}
+
+#third-litle-black-square {
+  width: 50%;
+  height: 50%;
+  margin: 0px 50px 0px 0px;
+}
+
+#yellow-litle-square {
+  width: 94%;
+  height: 100%;
+  background-color: yellow;
+}
+
+#third-black-column {
+  width: 100%;
+  height: 4%;
+}
+
+#second-darkyellow-square {
+  width: 108%;
+  height: 40%;
+  background-color: goldenrod;
+}
+
+#green-black-column {
+  width: 25%;
+  height: 100%;
+}
+
+#second-line-row {
+  width: 2%;
+  height: 97%;
+}
+
+#green-square {
+  width: 100%;
+  height: 52.5%;
+  background-color: hsl(119, 38%, 36%);
+}
+
+#four-litle-black-square {
+  width: 43%;
+  height: 51%;
+  margin: 0px 0px 0px 57px;
+}
+
+#green-litle-square {
+  width: 94%;
+  height: 100%;
+  margin: 0px 0px 0px 3px;
+  background-color: green;
+}
+
+#four-black-column {
+  width: 100%;
+  height: 4%;
+}
+
+#fourth-black-square {
+  width: 100%;
+  height: 40.5%;
+}
+
+#third-line-row {
+  width: 2%;
+  height: 97%;
+  margin: 0px -8px 0px -8px;
+}
+
+#four-medium-row-column {
+  width: 21%;
+  height: 97%;
+  margin: 6px 0px 6px 0px;
+  background-color: hsl(131, 46%, 21%);
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div id='painting'>
+    
+    <div id='first-row'>
+    
+      <div id='orangered-column' class='right'></div>
+      <div id='line-vertical-first' class='black right'></div>
+      <div id='black-orange-column' class='right'>
+        <div id='first-black-square' class='black right'></div>
+        <div id='first-black-column' ></div>
+        <div id='orange-square' class='right'>
+          <div id='first-litle-black-square' class='black'>
+            <div id='litle-orange-square'></div>
+          </div>
+        </div>
+      </div>
+      <div id='line-vertical' class='black right'></div>
+      <div id='second-column'>
+        <div id='darked-column'></div>
+        <div id='first-black-line' class='black'></div>
+        <div id='black-red-column' class='right'>
+          <div id='second-litle-black-square' class='black'>
+          <div id='litle-red-square'></div>
+          </div>
+        </div>
+        <div id='second-black-square' class='black'></div>
+        <div id='line' class='black'></div>
+      </div>
+</div>
+    
+    <div id='second-row'>
+      <div id='black-darkyellow-column' class='right'>
+        <div id='third-black-square' class='black right'></div>
+        <div id='second-black-column' class='black right'></div>
+        <div id='darkyellow-square' class='right'></div>
+      </div>
+      <div id='first-line-row' class='black right'></div>
+      <div id='yellow-darkyellow-column' class='right'>
+        <div id='yellow-square' class='right'>
+          <div id='third-litle-black-square' class='black'>
+            <div id='yellow-litle-square'></div>
+          </div>
+        </div>
+        <div id='third-black-column' class='black right'></div>
+        <div id='second-darkyellow-square' class='right'></div>
+      </div>
+      <div id='second-line-row' class='black right'></div>
+      <div id='green-black-column' class='right'>
+        <div id='green-square' class='right'>
+          <div id='four-litle-black-square' class='black'>
+            <div id='green-litle-square'></div>
+          </div>
+        </div>
+        <div id='four-black-column' class='black right'></div>
+        <div id='fourth-black-square' class='black right'></div>
+        </div>
+      <div id='third-line-row' class='black right'></div>
+      <div id='four-medium-row-column'></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
